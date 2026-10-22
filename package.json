@@ -1,0 +1,14 @@
+{
+  "name": "ci-cd-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "eslint app.js test.js eslint.config.js",
+    "test": "node --test test.js",
+    "package": "tar -czf app-package.tar.gz app.js test.js package.json eslint.config.js"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "globals": "^15.0.0"
+  }
+}
